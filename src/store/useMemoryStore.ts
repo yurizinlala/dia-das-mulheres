@@ -10,12 +10,12 @@ export interface CardData {
 // Array de placeholders para as fotos de família.
 // Substitua as URLs abaixo pelas suas próprias imagens.
 export const FAMILY_PHOTOS = [
-  'https://picsum.photos/seed/family1/400/400',
-  'https://picsum.photos/seed/family2/400/400',
-  'https://picsum.photos/seed/family3/400/400',
-  'https://picsum.photos/seed/family4/400/400',
-  'https://picsum.photos/seed/family5/400/400',
-  'https://picsum.photos/seed/family6/400/400',
+  '/memoria1.jpg',
+  '/memoria2.jpeg',
+  '/memoria3.jpeg',
+  '/memoria4.jpg',
+  '/memoria5.jpg',
+  '/memoria6.jpg',
 ];
 
 interface MemoryState {
@@ -47,7 +47,7 @@ export const useMemoryStore = create<MemoryState>((set, get) => ({
   initializeGame: () => {
     const duplicatedPhotos = [...FAMILY_PHOTOS, ...FAMILY_PHOTOS];
     const shuffledPhotos = shuffleArray(duplicatedPhotos);
-    
+
     const initialCards: CardData[] = shuffledPhotos.map((url, index) => ({
       id: `${index}-${url}`,
       imageUrl: url,
@@ -89,7 +89,7 @@ export const useMemoryStore = create<MemoryState>((set, get) => ({
           const matchedCards = [...get().cards];
           matchedCards[firstIndex].isMatched = true;
           matchedCards[secondIndex].isMatched = true;
-          
+
           const newMatches = get().matches + 1;
           const isVictory = newMatches === FAMILY_PHOTOS.length;
 
