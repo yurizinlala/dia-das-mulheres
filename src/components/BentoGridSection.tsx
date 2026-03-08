@@ -69,7 +69,7 @@ export function BentoGridSection() {
         {/* Bloco 1: Grande, ocupa 2 colunas no desktop */}
         <BentoItem
           className="md:col-span-2"
-          imageUrl="/abracoportoseguro.jpeg"
+          imageUrl="./abracoportoseguro.jpeg"
           title="Amor Incondicional"
           subtitle="Seu abraço é o nosso porto seguro, onde sempre encontramos paz."
           delay={0.1}
@@ -78,7 +78,7 @@ export function BentoGridSection() {
         {/* Bloco 2: Vertical, ocupa 1 coluna */}
         <BentoItem
           className="md:col-span-1"
-          imageUrl="/sabedoria.jpeg"
+          imageUrl="./sabedoria.jpeg"
           title="Sabedoria"
           subtitle="Seus conselhos guiam nossos passos todos os dias."
           delay={0.2}
@@ -87,7 +87,7 @@ export function BentoGridSection() {
         {/* Bloco 3: Quadrado, ocupa 1 coluna */}
         <BentoItem
           className="md:col-span-1"
-          imageUrl="/alegria.jpeg"
+          imageUrl="./alegria.jpeg"
           title="Alegria"
           subtitle="Seu sorriso ilumina qualquer ambiente."
           delay={0.3}
@@ -96,7 +96,7 @@ export function BentoGridSection() {
         {/* Bloco 4: Largo, ocupa 2 colunas no desktop */}
         <BentoItem
           className="md:col-span-2"
-          imageUrl="/forcaeinspiracao.jpeg"
+          imageUrl="./forcaeinspiracao.jpeg"
           title="Força e Inspiração"
           subtitle="Você é o pilar da nossa família, nosso maior exemplo de resiliência."
           delay={0.4}

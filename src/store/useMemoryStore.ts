@@ -10,12 +10,12 @@ export interface CardData {
 // Array de placeholders para as fotos de família.
 // Substitua as URLs abaixo pelas suas próprias imagens.
 export const FAMILY_PHOTOS = [
-  '/memoria1.jpg',
-  '/memoria2.jpeg',
-  '/memoria3.jpeg',
-  '/memoria4.jpg',
-  '/memoria5.jpg',
-  '/memoria6.jpg',
+  './memoria1.jpg',
+  './memoria2.jpeg',
+  './memoria3.jpeg',
+  './memoria4.jpg',
+  './memoria5.jpg',
+  './memoria6.jpg',
 ];
 
 interface MemoryState {

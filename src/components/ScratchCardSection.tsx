@@ -79,8 +79,8 @@ export function ScratchCardSection() {
         if (pixels[i] === 0) transparentPixels++;
       }
       const totalPixels = pixels.length / 4;
-      // Exige que raspe 85% em vez de 50%
-      if (transparentPixels / totalPixels > 0.85) {
+      // Exige que raspe 75% em vez de 85%
+      if (transparentPixels / totalPixels > 0.75) {
         setIsRevealed(true);
         canvas.style.transition = 'opacity 0.8s ease';
         canvas.style.opacity = '0';
